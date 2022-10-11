@@ -1,0 +1,369 @@
+
+body{
+    margin:0;
+    padding:0;
+}
+nav{
+    position: fixed; 
+    width: 100%;
+    background-color: #FDDB91;
+    box-shadow: 0 8px 16px 0 rgba(73, 53, 0, 0.295);
+    padding-top: 10px;
+    background-size: cover;
+    background-image:url('img/bcg.jpg');
+    z-index: 100;
+}
+
+
+nav.menu ul{
+    overflow: hidden;
+    padding-right:15px;  
+}
+
+nav.menu ul li{
+    list-style-type: none;
+    float: right;
+    border-left: solid black 2px;
+    transition: background-color 0.5s;
+}
+nav.menu ul li:last-child{
+float: left;
+border-left: none;
+
+}
+nav.menu ul li:nth-child(4){
+    border-left: none;
+}
+nav.menu ul li:first-child a{
+    color:red;
+}
+
+nav.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom:10px;
+    padding-top:10px;
+    font-size: 15pt;
+    font-family: 'Forte';
+    transition: transform 0.5s, text-shadow 0.5s, color 0.5s;
+}
+nav.menu ul li a:hover{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 10px #fff;
+    transform: scale(1.05);
+}
+
+nav.menu ul li.link:hover{
+    background-color: #55492f50;
+}
+
+nav.menu ul li.logo img{
+    max-height:50px;    
+}
+nav.menu ul li.logo a{
+    padding:0px;
+    margin:0px;   
+}
+nav.menu ul li.logo a:hover{
+    padding:0px;
+    margin:0px;   
+}
+
+/*header*/
+.header-image{
+  background: white;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('img/people-ge07fbe34c_1920.jpg');
+}
+/*
+.header-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10%;
+    margin-top: 350px;
+    opacity: 50%;
+}
+*/
+/*main*/
+
+h1{
+    font-family: 'Forte';
+    text-indent: 50px;
+}
+p{
+    font-size: 13pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.main{
+    max-width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+}
+div.main:last-child{
+    margin-bottom:100px;
+}
+    /*O NAS*/
+div.main div.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main div.container-1 div.text div.button{
+    margin-top:40px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+div.container-1 div.button a{
+    text-decoration: none;
+    color: black;
+
+    padding:13px 30px 13px 30px;
+border-radius: 30px;
+border:none;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.253);
+/*obsah-text*/
+font-family: 'Forte';
+font-size: 13pt;
+background-color: rgb(240,240,240);
+
+}
+div.container-1 div.button:hover{
+    transform: scale(1.05);
+}
+
+div.main div.container-1 div.text p{
+    text-indent: 25px;
+}
+
+div.container-1 div.fotky a img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;  
+    border-radius: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.363);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+div.container-1 div.fotky a img:first-child{
+    margin-right:100px;
+}
+
+div.container-1 div.fotky a img:hover{
+box-shadow: 0 0 20px gold;
+transform: scale(1.05);
+}
+/*NASE RODINKA*/
+div.container-2 div.text h1{
+text-align: center;
+}
+div.container-2 div.text p{
+    display:block;
+    text-indent: 25px;
+}
+
+div.main div.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container-2 div.fotky a img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;  
+    border-radius: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.363);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+div.container-2 div.fotky a img:first-child{
+    margin-left:100px;
+}
+
+div.container-2 div.fotky a img:hover{
+box-shadow: 0 0 20px gold;
+transform: scale(1.05);
+}
+
+div.container-2 div.button{
+    margin-top:40px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+div.container-2 div.button a{
+    text-decoration: none;
+    color: black;
+
+    padding:13px 30px 13px 30px;
+border-radius: 30px;
+border:none;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.253);
+/*obsah-text*/
+font-family: 'Forte';
+font-size: 13pt;
+background-color: rgb(240,240,240);
+}
+div.container-2 div.button:hover{
+    transform: scale(1.05);
+}
+
+/*ADOPTUJ*/
+div.main div.container-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main div.container-3 div.text div.button{
+    margin-top:40px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+div.container-3 div.button a{
+    text-decoration: none;
+    color: black;
+
+    padding:13px 30px 13px 30px;
+border-radius: 30px;
+border:none;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.253);
+/*obsah-text*/
+font-family: 'Forte';
+font-size: 13pt;
+background-color: rgb(240,240,240);
+
+}
+div.container-3 div.button:hover{
+    transform: scale(1.05);
+}
+
+div.main div.container-3 div.text p{
+    text-indent: 25px;
+}
+
+div.container-3 div.fotky a img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;  
+    border-radius: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.363);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+div.container-3 div.fotky a img:first-child{
+    margin-right:100px;
+}
+
+div.container-3 div.fotky a img:hover{
+box-shadow: 0 0 20px gold;
+transform: scale(1.05);
+}
+
+/*FOOTER*/
+footer{
+    position: relative;
+    width:100%;
+    background-image: url('img/bcg.jpg');
+    background-size: cover;
+    box-shadow: 0 4px 8px 8px rgba(73, 53, 0, 0.295);
+}
+
+footer .content{
+    padding-left:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    list-style-type: none;
+    columns:3;
+}
+footer ul li{
+    
+    padding-right: 50px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: rgb(145, 105, 105);
+    transition: color 0.5s;
+}
+footer ul li a:hover{
+    color: rgb(255, 249, 249);
+}
+footer .text{
+    text-align: center;
+}
+footer .text p{
+    border-right: 1px solid white;
+    padding-right: 45px;
+}
+
+footer .container-foot{
+    position: absolute;
+    bottom:0;
+    left:0;
+    opacity:0.5;
+}
+footer #date{
+    margin:0;
+}
+
+
+table{
+    width:100%;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px 8px rgba(134, 134, 134, 0.295);
+    padding-bottom:50px;
+}
+tr{
+    column-width: 25%;
+}
+th{
+    font-family: 'Forte';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 500px;    
+    font-size: 16pt;
+}
+
+table tr td:first-child{
+    font-weight: bold;
+
+}
+td{
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.308);
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'Forte';
+    src:url('Forte.ttf.woff') format('woff'),
+        url('Forte.ttf.svg#Forte') format('svg'),
+        url('Forte.ttf.eot'),
+        url('Forte.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
