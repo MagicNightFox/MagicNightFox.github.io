@@ -116,9 +116,9 @@ nav.menu ul li.logo a:hover{
    opacity: 0.5;
    border-width: 1px;
   }
-    #mezera{
-      Padding-right: 15px;
-      Padding-left: 15px;
+    span#mezera{
+      Padding-right: 5px;
+      Padding-left: 5px;
   }
 /*MAIN*/
 h1{
