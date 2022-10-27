@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,8 @@
 <body>
     <nav class="menu" id="menu">
         <ul>
-            <li class="link"><a href="../../pages/ourfamily/our-family.html">ADOPTUJ</a></li>
+            <li class="link"><a href="../../pages/kariera/kariera.html">KARIÉRA</a></li>
+            <li class="link" id="active"><a href="#">O NÁS</a></li>
             <li class="link"><a href="../../pages/gallery/gallery.html">FOTOALBUM</a></li>  
             <li class="link"><a href="../../pages/ourfamily/our-family.html">NAŠE RODINKA</a></li>
             <li class="link"><a href="../../pages/menu/menu.html">MENU</a></li>
@@ -38,7 +39,7 @@
                     <img src="../../img/close-up-hands-barista-make-latte-coffee-art-paint.jpg" alt="Kavárna-foto">
                 </div>
                 <hr>
-            <h1>Adoptujte</h1>
+            <h1 id="adoptuj">Adoptujte</h1>
             <p>Naše chlupáče milujeme a jsme nesmírně rádi za to, že je máme. Avšak naše prostory jsou pro všechny naše kočičky moc malé a i my jsme pouze lidé a nedokážeme se starat o každého chlupáče, který k nám zavítá. Našim kočičím společníkům se snažíme poskytnout vždy tu nejlepší péči co jde, to však stojí čas a finance a obojího máme pouze omezený počet.</p>
             <p>Každý z našich chlupáčů je očkován, odčerven a snažíme všechny nechat kastrovat co nejdříve to jde. Pokud hledáte nový přírůstek do rodiny a dokážete mů zaručit správnou péči, časově, finančně i emočně, pak nás neváhejte zkontaktovat. V sekci "<a href="../ourfamily/our-family.html">Naše Rodinka</a>" můžete vidět chlupáče, kteří jsou nebo budou v kavárně mezi zákazníky. Avšak nejsou tam všechny naše kočky, a tak se po domluvě můžete přijít podívat i na zbytek naší kočičí famílie.</p>
             <hr>
@@ -75,14 +76,14 @@
             </div>
             <hr>
             <div class="formular"> 
-                <form>
+                <form onsubmit="formOdeslan()">
                     <h1>Kontaktujte nás!</h1>
                     <input type="text" id="first-name" name="first-name" placeholder="Vaše křestní jméno" required>
                     <input type="text" id="last-name" name="last-name" placeholder="Vaše příjmení" required><br>
                     <input type="email" id="email" name="email" placeholder="vasmail@mail.cz" required>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789"><br>
                     <!--<input type="textbox" id="message" name="message" placeholder="Dobrý den, rád bych se zeptal na...">-->
-                    <textarea id="message" name="message" cols="100%" rows="10"placeholder="Dobrý den, rád bych se zeptal na..." required></textarea><br>
+                    <textarea id="message" name="message" cols="120" rows="10"placeholder="Dobrý den, rád bych se zeptal na..." required></textarea><br>
                     <input type="submit" id="submit" value="Odeslat">
                 </form>
 
@@ -96,7 +97,7 @@
         
                 <div class="content">
                     <div class="text">
-                        <p>Nikola Trpková ©2022<br>Web slouží pouze jako školní projekt</p>
+                        <p>Nikola Trpková ©2022<br>Web slouží pouze jako školní projekt<br>Obrázky použity z webu <a href="https://www.freepik.com">Freepik</a></p>
                     </div>           
                 <div class="secondary-menu">
                 <ul>
@@ -105,7 +106,7 @@
                     <li><a href="#kudyknam">Kudy k nám</a></li>
                     <li><a href="../../pages/gallery/gallery.html">Fotogalerie</a></li>
                     <li><a href="../../pages/kariera/kariera.html">Kariéra</a></li>
-                    <li><a href="../../pages/ourfamily/our-family.html">Adoptuj</a></li>
+                    <li><a href="#adoptuj">Adoptuj</a></li>
                 </ul>
                 </div>
             </div>

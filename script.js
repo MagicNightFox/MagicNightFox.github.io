@@ -20,4 +20,9 @@ else{
 
 function bigpic(img) {
     viewwin = window.open(img.src,'viewwin', 'width=600,height=300');    
+}
+
+
+ function formOdeslan(){
+alert("Úspěšně odesláno");
  }

@@ -43,8 +43,8 @@ h1{
 }
 form h1{
     margin-top:0;
-    color: black;
-    text-shadow: 4px 4px 4px rgb(255, 255, 255);
+    color: white;
+    text-shadow: 4px 4px 4px rgba(14, 13, 13, 0.89);
 }
 form{
     text-align: center;
@@ -52,6 +52,11 @@ form{
     margin: auto;
     border-radius: 5px;
     background-color: rgba(155, 155, 155, 0.349);
+    background-image: url("../../img/texture-background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border: 10px solid transparent;
+border-image: url("../../img/wooden-textured-background-.jpg") 30 round;
     box-shadow: 0 4px 16px 16px rgba(0, 0, 0, 0.603);
     padding-top: 25px;
     padding-bottom: 25px;
@@ -87,6 +92,7 @@ form #message{
     padding: 25px 30px 25px 30px;
  width: 70%;   
  margin-bottom: 25px;
+ resize: none
 }
 form input#submit{
     padding-left:50px;
@@ -137,6 +143,7 @@ form input#submit:hover{
             padding: 25px 30px 25px 30px;
          width: 70%;   
          margin-bottom: 25px;
+         
         }
 }
 
@@ -154,9 +161,14 @@ form input#submit:hover{
     }
     form{
         background-color: white;
+        background-image: none;
+        border: none;
         box-shadow: none;
     }
-    
+    form h1{
+        color: black;
+        text-shadow: 0 0 10px rgba(2, 2, 2, 0.767);
+    }
     .formular form br{
         display: none;
     }
@@ -181,11 +193,14 @@ form input#submit:hover{
             margin-bottom: 5px;
         }
         form #message{
+            
             border-radius: 0;
             border: none;
             box-shadow: 0 4px 16px 8px rgba(134, 134, 134, 0.295);
             padding: 25px 30px 25px 30px;
-         width: 77%;   
+         width:inherit;  
          margin-bottom: 25px;
+         max-width: 100%;
+         box-sizing: border-box;
         }
 }
