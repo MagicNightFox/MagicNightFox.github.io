@@ -178,7 +178,7 @@ footer ul li{
 }
 footer ul li a, footer .text a{
     text-decoration: none;
-    color: rgb(145, 105, 105);
+    color: rgb(105, 53, 53);
     transition: color 0.5s;
 }
 footer ul li a:hover, footer .text a:hover{
