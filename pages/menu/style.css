@@ -6,9 +6,9 @@
     display: none;
 }
 
-
-
-
+table th:first-of-type{
+    font-size: 2em;
+}
 
 /*  Mobile  */
 
