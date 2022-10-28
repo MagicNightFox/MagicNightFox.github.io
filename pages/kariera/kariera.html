@@ -66,10 +66,15 @@
             <hr>
             <form onsubmit="formOdeslan()">
                 <h1>Máte zájem?</h1>
-                <label><input type="text" id="first-name" name="first-name" placeholder="Vaše křestní jméno" required></label><br>
-                <label><input type="text" id="last-name" name="last-name" placeholder="Vaše příjmení" required></label><br>
-                <label><input type="email" id="email" name="email" placeholder="vasmail@mail.cz" required></label><br>
-                <label><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required></label><br>
+                <label for="first-name">Jméno:</label><br>
+                <input type="text" id="first-name" name="first-name" placeholder="Nathaniel" required><br>
+                <label for="last-name">Príjmení:</label><br>
+                <input type="text" id="last-name" name="last-name" placeholder="Higgers" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Natehiggers@gmail.com" required><br>
+                <label for="phone">Telefon:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required><br>
+                <hr>
                 <label for="cv" class="zivotopis">
                     <span class="material-symbols-outlined">file_upload</span>
                     <input type="file" id="cv" name="cv" placeholder="váš životopis" required>

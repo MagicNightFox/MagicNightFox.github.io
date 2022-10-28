@@ -77,14 +77,18 @@
             <hr>
             <div class="formular"> 
                 <form onsubmit="formOdeslan()">
+                    <div class="formular">
                     <h1>Kontaktujte nás!</h1>
+                    <label for="first-name">Jméno a </label><label for="last-name">príjmení:</label><br>
                     <input type="text" id="first-name" name="first-name" placeholder="Vaše křestní jméno" required>
                     <input type="text" id="last-name" name="last-name" placeholder="Vaše příjmení" required><br>
+                    <label for="email">Email a </label><label for="phone">telefon:</label><br>
                     <input type="email" id="email" name="email" placeholder="vasmail@mail.cz" required>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789"><br>
-                    <!--<input type="textbox" id="message" name="message" placeholder="Dobrý den, rád bych se zeptal na...">-->
+                    <label for="message">Vaše zpráva:</label><br>
                     <textarea id="message" name="message" cols="120" rows="10"placeholder="Dobrý den, rád bych se zeptal na..." required></textarea><br>
                     <input type="submit" id="submit" value="Odeslat">
+                </div>
                 </form>
 
                 
