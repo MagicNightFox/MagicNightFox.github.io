@@ -1,0 +1,186 @@
+
+h1{
+    text-indent: 50px;
+}
+
+div.main div.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main div.container-1 div.text div.button{
+    margin-top:40px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+div.container-1 div.button a{
+    text-decoration: none;
+    color: black;
+
+    padding:13px 30px 13px 30px;
+border-radius: 30px;
+border:none;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.253);
+/*obsah-text*/
+font-family: 'Just-Another-Hand', cursive;
+font-size: 18pt;
+background-color: rgb(240,240,240);
+
+}
+div.container-1 div.button:hover{
+    transform: scale(1.05);
+}
+
+div.main div.container-1 div.text p{
+    text-indent: 25px;
+}
+
+div.container-1 div.fotky a img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;  
+    border-radius: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.363);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+div.container-1 div.fotky a img:first-child{
+    margin-right:100px;
+}
+
+div.container-1 div.fotky a img:hover{
+box-shadow: 0 0 20px gold;
+transform: scale(1.05);
+}
+/*NASE RODINKA*/
+div.container-2 div.text h1{
+text-align: center;
+}
+div.container-2 div.text p{
+    display:block;
+    text-indent: 25px;
+}
+
+div.main div.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container-2 div.fotky a img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;  
+    border-radius: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.363);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+div.container-2 div.fotky a img:first-child{
+    margin-left:100px;
+}
+
+div.container-2 div.fotky a img:hover{
+box-shadow: 0 0 20px gold;
+transform: scale(1.05);
+}
+
+div.container-2 div.button{
+    margin-top:40px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+div.container-2 div.button a{
+    text-decoration: none;
+    color: black;
+
+    padding:13px 30px 13px 30px;
+border-radius: 30px;
+border:none;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.253);
+/*obsah-text*/
+font-family: 'Just-Another-Hand', cursive;
+font-size: 18pt;
+background-color: rgb(240,240,240);
+}
+div.container-2 div.button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/*  MOBIL   */
+
+
+
+
+
+@media screen and (max-width: 768px){
+    h1{
+        text-indent: 0;
+        text-align: center;
+    }
+    div.main{
+        max-width: 85%;
+    }
+    div.main div.container-2{
+        flex-direction: column;
+    }
+    div.main div.container-1{
+        flex-direction: column;
+    }
+    div.container-1 div.fotky a img{
+        width: 200px;
+        height: 200px;
+    }
+    div.container-1 div.fotky a img:first-child{
+        margin-right:0;
+    }
+    div.container-2 div.fotky a img{
+        display: none;
+    }
+
+}
+
+
+
+
+
+/*   TABLET   */
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .main{
+    padding-top:50px;
+    }
+    h1{
+        text-indent: 0;
+        text-align: center;
+    }
+    div.main div.container-2{
+        flex-direction: column;
+    }
+    div.main div.container-1{
+        flex-direction: column;
+    }
+    div.container-1 div.fotky a img{
+        width: 200px;
+        height: 200px;
+    }
+    div.container-1 div.fotky a img:first-child{
+        margin-right:0;
+    }
+    div.container-2 div.fotky a img{
+        display: none;
+    }
+}
+
